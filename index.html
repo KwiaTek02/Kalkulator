@@ -4,14 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prosty Kalkulator</title>
-    <link rel="app.js">
-    <link rel="styles">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="javascript.js"></script>
 </head>
 <body>
-<div>
-
-</div>
-
-
+    <h1>Kalkulator</h1>
+        <h2>Nr indeksu:113802</h2>
+    <div id="calculator">
+        <label for="display"></label>
+        <input type="text" id="display">
+            <button onclick="clearScreen()" class="button operator wide">C</button>
+            <button onclick="deleteLastCharacter()" class="operator">Del</button>
+            <button onclick="addCharacter('/')" class="operator">/</button>
+            <button onclick="addCharacter('7')" class="number">7</button>
+            <button onclick="addCharacter('8')" class="number">8</button>
+            <button onclick="addCharacter('9')" class="number">9</button>
+            <button onclick="addCharacter('*')" class="operator">*</button>
+            <button onclick="addCharacter('4')" class="number">4</button>
+            <button onclick="addCharacter('5')" class="number">5</button>
+            <button onclick="addCharacter('6')" class="number">6</button>
+            <button onclick="addCharacter('-')" class="operator">-</button>
+            <button onclick="addCharacter('1')" class="number">1</button>
+            <button onclick="addCharacter('2')" class="number">2</button>
+            <button onclick="addCharacter('3')" class="number">3</button>
+            <button onclick="addCharacter('+')" class="operator">+</button>
+            <button onclick="addCharacter('.')" class="operator">.</button>
+            <button onclick="addCharacter('0')" class="number">0</button>
+            <button onclick="addCharacter('%')" class="operator">%</button>
+            <button onclick="calculateResult()" class="operator">=</button>
+    </div>
 </body>
 </html>
